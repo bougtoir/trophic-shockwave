@@ -1,0 +1,34 @@
+data_sources:
+  snapshot_serengeti:
+    name: "Snapshot Serengeti (Swanson et al. 2015 Scientific Data)"
+    doi: "10.5061/dryad.5pt92"
+    url: "https://datadryad.org/stash/dataset/doi:10.5061/dryad.5pt92"
+    license: "CC0 1.0 (public domain)"
+    files:
+      consensus_data: {file_id: 2692, name: consensus_data.csv}
+      search_effort: {file_id: 2691, name: search_effort.csv}
+      gold_standard: {file_id: 2690, name: gold_standard_data.csv}
+      readme_consensus: {file_id: 2693, name: README_for_consensus_data.docx}
+      readme_raw: {file_id: 2696, name: README_for_raw_data_for_dryad.csv.docx}
+      all_images: {file_id: 2694, name: all_images.csv}
+    note: "Site coords = UTM zone 36S datum Arc1960 (EPSG:21036). Download requires Anubis PoW challenge; src/download/dryad_download.py solves it."
+
+  modis_mod13q1:
+    name: "MODIS/Terra+Aqua Vegetation Indices 16-Day L3 Global 250m, Collection 6.1"
+    collection: "modis-13Q1-061"
+    stac: "https://planetarycomputer.microsoft.com/api/stac/v1"
+    license: "NASA public domain (LP DAAC)"
+    bands: ["250m_16_days_NDVI", "250m_16_days_EVI", "250m_16_days_VI_Quality", "250m_16_days_pixel_reliability"]
+
+  climate_era5land:
+    name: "ERA5-Land reanalysis via Open-Meteo Historical Archive API"
+    url: "https://archive-api.open-meteo.com/v1/archive"
+    license: "CC-BY 4.0 (Copernicus C3S data via Open-Meteo)"
+    note: "hourly temperature_2m + precipitation, model=era5_land (0.1 deg). Substitution for direct CDS access documented in DATA_AUDIT.md."
+
+  movebank_wildebeest_mara:
+    name: "White-bearded wildebeest in Kenya (Stabach et al. 2020) — Mara population"
+    doi: "10.5441/001/1.h0t27719/3"
+    url: "https://datarepository.movebank.org/items/af16725f-c4fb-4d81-9a32-c4c12bf904e5"
+    license: "CC0 (Movebank Data Repository)"
+    note: "Non-contemporaneous with Snapshot Serengeti study period and Mara-side; used ONLY for general movement-corridor context per spec section 23, not as contemporaneous trajectories. Live Movebank direct-read API requires a user account (not available); restriction documented."

@@ -1,0 +1,20 @@
+{
+  "movebank_direct_read": "requires authenticated Movebank account; not available in this environment",
+  "movebank_data_repository": "public; no auth needed for CC0/CC-BY study downloads",
+  "serengeti_overlap": "No contemporaneous Serengeti-NP GPS tracking dataset is public on the Movebank Data Repository as of access date. The Mara wildebeest dataset (Stabach et al. 2020) partially overlaps the wider Serengeti-Mara ecosystem (Kenya side) and post-dates the camera study; per spec section 23 it can inform general corridor structure only, never contemporaneous trajectories.",
+  "accessed_utc": "2026-09-20T13:07:34.917558+00:00",
+  "downloaded": [
+    {
+      "file": "White-bearded wildebeest in Kenya-gps.csv",
+      "bytes": 49178444
+    },
+    {
+      "file": "README.txt",
+      "bytes": 13782
+    },
+    {
+      "file": "White-bearded wildebeest in Kenya-reference-data.csv",
+      "bytes": 9770
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+control,species,stat,value
+temporal_placebo_shift-8,lion,mean_post_coef,0.06947081965825583
+temporal_placebo_shift-8,hyenaSpotted,mean_post_coef,-0.01651945165448034
+temporal_placebo_shift-6,lion,mean_post_coef,0.13230051828154704
+temporal_placebo_shift-6,hyenaSpotted,mean_post_coef,-0.0035845310794265085
+temporal_placebo_shift-4,lion,mean_post_coef,0.14550975117401627
+temporal_placebo_shift-4,hyenaSpotted,mean_post_coef,0.004920680172715738
+permuted_network,lion+hyenaSpotted,aic_observed,-169.5332813445366
+permuted_network,lion+hyenaSpotted,aic_perm_mean,-161.36194621074534
+permuted_network,lion+hyenaSpotted,frac_perm_better,0.12
+matched_unconnected,lion+hyenaSpotted,mean_resp_connected,0.015230926692899863
+matched_unconnected,lion+hyenaSpotted,mean_resp_unconnected,0.00914429861304564
+matched_unconnected,lion+hyenaSpotted,paired_diff,0.006086628079854226

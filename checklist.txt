@@ -1,0 +1,13 @@
+[x] Snapshot Serengeti Dryad download (consensus, all_images, effort, READMEs, gold)
+[x] MODIS MOD13Q1 v6.1 access verified (Planetary Computer, tile h21v09)
+[x] ERA5-Land via Open-Meteo verified
+[x] Movebank: wildebeest Mara Stabach2020 found; live API needs account (document)
+[ ] repo scaffold (env, makefile, config, docs skeleton)
+[ ] src/download: modis extract, climate, movebank
+[ ] src/preprocess: panel, anomalies, shock events, connectivity
+[ ] models: event studies A/B/C, dist-lag W compare, IRF, neg controls, autocorr
+[ ] simulation scenarios A-H
+[ ] figures A-H + tables 1-7
+[ ] DATA_AUDIT.md, ANALYSIS_PLAN, ASSUMPTIONS, DECISION_LOG, GO_NO_GO, LITERATURE_MATRIX, outline
+[ ] make all runs clean
+[ ] PR + sync-to-repos entry

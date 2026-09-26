@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Trophic Shockwave: delayed propagation of vegetation shocks through mobile food webs"
+authors:
+  - family-names: Onishi
+    given-names: Tatsuki
+license: MIT
+type: software

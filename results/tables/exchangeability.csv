@@ -1,0 +1,2 @@
+n_events,n_isolated,n_clustered,ps_overlap_range,n_clustered_in_ps_support,nn_caliper,n_clustered_matchable,frac_clustered_matchable
+89,26,63,"[0.08141808516632819, 0.6733822751042782]",57,1.2406945242563836,44,0.6984126984126984

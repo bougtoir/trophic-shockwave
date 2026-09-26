@@ -1,0 +1,18 @@
+# DATA_AUDIT
+
+Generated 2026-09-20T15:39:51.896868+00:00 from code; see results/tables/data_inventory.csv.
+
+| dataset                                                   | source                               | doi                      | license            | temporal_span                              | spatial_coverage            | spatial_res                       | temporal_res               | variables                     |    n_obs | n_sites        | n_time_bins   | effort_vars                             | coords_exact   | redistribution      | known_biases                                          |
+|:----------------------------------------------------------|:-------------------------------------|:-------------------------|:-------------------|:-------------------------------------------|:----------------------------|:----------------------------------|:---------------------------|:------------------------------|---------:|:---------------|:--------------|:----------------------------------------|:---------------|:--------------------|:------------------------------------------------------|
+| Snapshot Serengeti consensus (Dryad 5pt92)                | datadryad.org                        | 10.5061/dryad.5pt92      | CC0                | 2010-07-16 to 2013-04-26                   | 1125 km2 grid, Serengeti NP | exact UTM Arc1960 36S site coords | capture event              | species,count,behaviour,votes |   334671 | 225            | 32            | search_effort.csv camera on/off windows | yes            | yes (CC0)           | nan                                                   |
+| MODIS MOD13Q1/MYD13Q1 Collection 6.1 (Planetary Computer) | planetarycomputer.microsoft.com STAC | LP DAAC MOD13Q1 v6.1     | NASA public domain | 2010-06-18 00:00:00 to 2013-05-25 00:00:00 | camera grid bbox            | 250 m                             | 16-day composite (MOD+MYD) | NDVI,EVI,pixel_reliability    |   153000 | 225            | 136           | n_pix valid pixels                      | n/a (raster)   | derived values only | nan                                                   |
+| ERA5-Land hourly via Open-Meteo archive                   | archive-api.open-meteo.com           | ERA5-Land (C3S)          | CC-BY 4.0          | 2010-07-01 00:00:00 to 2013-05-31 23:00:00 | per-site grid cell          | 0.1 deg (~9 km)                   | hourly                     | temperature_2m,precipitation  |  5756400 | 225            | nan           | -                                       | grid           | yes                 | nan                                                   |
+| Movebank Data Repository (wildebeest Mara; Stabach 2020)  | datarepository.movebank.org          | 10.5441/001/1.h0t27719/3 | CC0                | non-contemporaneous (corridors only)       | Serengeti-Mara (Kenya side) | GPS fixes                         | GPS fix interval           | location_long/lat,timestamp   | 49201996 | 36 individuals | -             | -                                       | yes            | yes                 | not contemporaneous with camera study; Mara-side only |
+
+## Access notes
+
+- Dryad file downloads are gated by an Anubis proof-of-work challenge; src/download/dryad_download.py solves it programmatically.
+- Live Movebank direct-read API requires a Movebank account (not provisioned); the public Data Repository was used instead.
+- ERA5-Land is accessed through the Open-Meteo archive API rather than CDS (no CDS key provisioned); same underlying product, 0.1-deg grid.
+- Site coordinates are exact (UTM Arc1960 36S) per the Dryad README.
+- Camera effort comes from search_effort.csv deployment windows; bins with cam_days=0 are excluded from rate responses.

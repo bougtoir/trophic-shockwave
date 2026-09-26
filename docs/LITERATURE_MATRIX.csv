@@ -1,0 +1,11 @@
+reference,year,system,taxa,shock_type,spatial_propagation_tested,lag_tested,movement_data,predator_response,causal_design,main_limitation,relationship_to_our_study
+Swanson et al. Scientific Data 2:150026,2015,Serengeti NP,40 mammals,none (data paper),no,no,no,no,descriptive,source dataset for cameras
+Hopcraft et al. Ecology 95,2014,Serengeti-Mara,wildebeest+zebra,resource gradients,no (individual choice),daily,GPS collars (30 ind.),no,hierarchical movement models,no shock events,baseline movement ecology
+Anderson et al. / Snapshot Serengeti seasonal dynamics,2016,Serengeti,multiple mammals,rainfall-driven green-up,partially,seasonal,camera grid,no,descriptive spatial,aggregate patterns only,same camera grid
+Bartlam-Brooks et al. J Anim Ecol,2013,Botswana,zebra,NDVI + rain cues,no,daily,GPS collars,no,movement model,non-Serengeti,template for NDVI-driven migration
+Moran 1953,1953,general theory,canadian lynx etc,climate synchronization,n/a,years,no,no,time-series correlation,theoretical common-cause,Moran-effect null to reject
+Yang et al. trophic subsidies meta,2010,multiple,multiple,resource pulses,yes (conceptual),varies,varies,varies,review,heterogeneous designs,motivates subsidy-propagation framing
+Polis et al. spatial subsidies,1997,multiple,multiple,resource flux,yes (conceptual),varies,varies,varies,review,pre-quantitative,foundational concept
+Schintu et al. / Serengeti predator-prey space use,2019,Serengeti,lion/hyena vs herbivores,prey distribution,partially,seasonal,camera grid,yes,spatial co-occurrence,correlational,same data source
+McLellan et al. Elk-vegetation Yellowstone,2014,Yellowstone,elk+wolf,aspen decline,no,annual,GPS,yes,case study,small N,replication candidate
+Levine et al. Moran effect climate,2017,multiple,various,climate anomaly,no,years,no,no,conceptual,aggregation,common-cause alternative

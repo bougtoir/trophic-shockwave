@@ -1,0 +1,2 @@
+total_site_shocks,unique_shock_bins,isolated_shock_events,clustered_shock_events,sites_per_bin_mean,sites_per_bin_median,events_by_year,icc_shock_bin_wildebeest_post,ess_approx
+149,14,51,98,10.642857142857142,2.5,"{2010: 84, 2011: 61, 2012: 4}",0.015186574312446107,129.96732878152497

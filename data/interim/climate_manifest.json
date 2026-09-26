@@ -1,0 +1,9 @@
+{
+  "api": "https://archive-api.open-meteo.com/v1/archive",
+  "model": "era5_seamless",
+  "variables": [
+    "temperature_2m",
+    "precipitation"
+  ],
+  "downloaded_utc": "2026-09-20T13:14:16.262315+00:00"
+}

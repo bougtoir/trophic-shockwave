@@ -1,0 +1,51 @@
+# Trophic Shockwave — global configuration (prespecified before outcome inspection)
+seed: 20260920
+
+study_system:
+  name: Serengeti
+  # bbox of Snapshot Serengeti camera grid, WGS84 lon/lat [minlon,minlat,maxlon,maxlat]
+  bbox: [33.9, -3.4, 35.8, -1.9]
+  # Site coordinates are UTM zone 36S, datum Arc 1960 (EPSG:21036 per Dryad README)
+  site_crs_epsg: 21036
+
+temporal:
+  primary_bin_days: 16          # matches MOD13Q1
+  sensitivity_bins_days: [8, 30, 32]
+  lag_min: -12                  # 16-day bins before/after shock
+  lag_max: 24
+
+spatial:
+  primary_buffer_m: 1000
+  sensitivity_buffers_m: [250, 500, 2000, 5000]
+
+vegetation:
+  product: "MOD13Q1.061"        # also ingest MYD13Q1 (8-day sensitivity)
+  indices: ["NDVI", "EVI"]
+  shock_z_threshold: -2.0       # primary shock definition
+  shock_sensitivity_thresholds: [-1.5, -2.5]
+  shock_percentile: 0.05
+  regionwide_frac: 0.8          # shock event affecting >=80% of sites = region-wide (classified separately)
+  merge_gap_bins: 0             # merge anomalous periods into one event if consecutive
+
+species:
+  herbivores_primary: ["wildebeest", "zebra"]
+  herbivores_secondary: ["gazelleThomsons", "gazelleGrants", "buffalo", "topi", "hartebeest", "impala"]
+  carnivores_primary: ["lion", "hyenaSpotted"]
+  carnivores_secondary: ["cheetah", "leopard"]
+  negative_control_species: ["elephant", "giraffe"]   # mega-herbivores not preyed on; expected weak response
+
+responses:
+  primary: "encounter_rate"     # independent-encounter count per camera-day
+  alternates: ["detection", "encounters"]
+
+models:
+  event_study_reference_lag: -1
+  cluster: "site"
+  permutations_network: 200
+  placebo_shifts: [-8, -6, -4]  # temporal placebo: fake shocks these many bins early
+
+simulation:
+  n_sites: 225
+  n_periods: 62
+  n_reps: 100
+  seed: 20260920

@@ -1,0 +1,17 @@
+[project]
+name = "trophic-shockwave"
+version = "0.1.0"
+description = "Delayed propagation of local vegetation shocks through mobile terrestrial food webs (Serengeti)"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy", "pandas", "scipy", "statsmodels", "matplotlib",
+  "rasterio", "geopandas", "shapely", "pyproj", "pyarrow",
+  "pystac-client", "planetary-computer", "requests", "tabulate",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []

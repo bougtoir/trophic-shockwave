@@ -1,0 +1,5 @@
+data/raw/
+data/interim/*.parquet
+data/external/movebank/*.csv
+__pycache__/
+*.pyc

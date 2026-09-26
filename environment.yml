@@ -1,0 +1,21 @@
+name: trophic-shockwave
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - statsmodels
+  - matplotlib
+  - rasterio
+  - geopandas
+  - shapely
+  - pyproj
+  - pyarrow
+  - pystac-client
+  - planetary-computer
+  - requests
+  - pip:
+      - tabulate
